@@ -1,42 +1,14 @@
-//Functional Calculator
-
 #include<iostream>
 using namespace std;
-int main() 
-{
-	float N1, N2, Answer;
-	char operter;
-	string choice="";
-	
+int main() {
+	int numba = 7;
 	do {
-		cout << "Enter First number, Operator and Second number: ";
-		cin >> N1 >> operter >> N2;
-		switch (operter)
-		{
-		case '+':
-		    Answer = N1 + N2;
-			break;
+		cout << numba << " ";
 
-		case '-':
-			Answer = N1 - N2;
-			break;
+		numba += 7;
 
-		case '*':
-			Answer = N1 * N2;
-			break;
-		case'/':
-			Answer = N1 / N2;
-			break;
-		default:
-			break;
+	} while (numba <= 98);
 
-		}
-		cout << "Answer = " << Answer << endl;
-		cout << "Do Another?(y/n): ";
-		cin >> choice;
-
-	} while (choice == "Y" || choice == "y");
-	
-	return 0 ;
+	return 0;
 }
 
